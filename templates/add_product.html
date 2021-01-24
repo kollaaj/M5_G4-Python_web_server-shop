@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <title>Add product</title>
+</head>
+<body>
+  <h1>Shop & Stuff</h1>
+  <h2>Add product</h2>
+  <div class="add-page">
+    <form class="add-form" method="POST" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input id="name" name="name" class="input-areas" type="text" placeholder="rainbow puke sneakers">
+
+      <label for="description">Description</label>
+      <textarea id="description" name="description" cols="30" rows="10" placeholder="Beautiful italian made sneakers from the world renowned designer Unicorn Fantasm"></textarea>
+
+      <label for="price">Price</label>
+      <input id="price" name="price" class="input-areas" type="number" placeholder="$1500">
+
+      <label for="image">Image</label>
+      <input id="image" name="image" type="file">
+
+      <div class="buttons">
+        <a class="cancel" href="/">cancel</a>
+        <button class="add" type="submit">Add product</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -4,14 +4,42 @@
   box-sizing: border-box;
 }
 
+body {
+  // height: 100vh;
+  // width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 60%;
+  margin: 3rem 0 0 0;
+  border-radius: 20px;
+  background: 
+  radial-gradient( 96.64% 139.16% at 1.21% 98.06%, 
+  #7BEAD6 0%, rgba(255, 255, 255, 0) 100%),
+
+  radial-gradient(100% 144% at 0% 0%, 
+  #D99EFF 0%, rgba(255, 255, 255, 0) 100%),
+
+  radial-gradient(100% 144% at 100% 0%, #FF9777 0%,
+  rgba(255, 255, 255, 0) 100%),
+
+  radial-gradient(100% 144% at 100% 100%, #6A25BD 0%, 
+  rgba(255, 255, 255, 0) 100%);
+  
+}
+
 h1 {
   color: rgb(35, 35, 42);
   padding: 2rem;
   font-size: 3rem;
-}
-
-h1:hover {
-  color: pink;
 }
 
 h2 {
@@ -38,7 +66,8 @@ h2 {
 
 .item-card {
   width: auto;
-  border-radius: 6px;
+  max-width: 14.5rem;
+  border-radius: 0.375rem;
   border: solid rgb(35, 35, 42);
   padding: 1rem;
   margin: 2rem;
@@ -50,11 +79,12 @@ h2 {
 }
 
 .image {
-  width: 200px;
+  width: 12.5rem;
 }
 
 .item-card-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -98,8 +128,9 @@ textarea {
 
 .cancel {
   text-decoration: none;
-  background-color: #fff;
+  // background-color: #fff;
   border-style: none;
+  padding: 0.7rem 1.5rem;
 }
 
 .add {
@@ -136,4 +167,5 @@ textarea {
 
 .product-info .delete {
   display: block;
+  padding-bottom: 3rem;
 }

@@ -7,28 +7,29 @@
   <title>shop&stuff</title>
 </head>
 <body>
-  <h1>Shop & Stuff</h1>
+  <main>
+    <h1>Shop & Stuff</h1>
 
-  <a class="add-link" href="/products/add">Add product</a>
-  
-  <div class="cards">
-    {% for product in products %}
-      <div class="item-card">
-        <a href="/products/{{ product.id }}">
-          <div class="item-card-top">
-            <img class="image" src="/static/images/product{{ product.id }}{{ product.imageExtension }}" alt="">
+    <a class="add-link" href="/products/add">Add product</a>
+    
+    <div class="cards">
+      {% for product in products %}
+        <div class="item-card">
+          <a href="/products/{{ product.id }}">
+            <div class="item-card-top">
+              <img class="image" src="/static/images/product{{ product.id }}{{ product.imageExtension }}" alt="">
+            </div>
+            <div class="item-card-bottom">
+              <h3>{{ product.name }}</h3>
+              <h3>${{ product.price }}</h3> 
+            </div>
+          </a>
+          <div class="delete">
+            <a href="/products/{{ product.id }}/delete">delete</a>
           </div>
-          <div class="item-card-bottom">
-            <h3>{{ product.name }}</h3>
-            <h3>{{ product.price }}</h3> 
-          </div>
-        </a>
-        <div class="delete">
-          <a href="/products/{{ product.id }}/delete">delete</a>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+      {% endfor %}
+    </div>
+  </main>
 </body>
 </html>

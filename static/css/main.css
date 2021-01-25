@@ -3,107 +3,127 @@
   padding: 0;
   box-sizing: border-box; }
 
-  h1 {
-    color: #23232a;
-    padding: 2rem;
-    font-size: 3rem; }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-    h1:hover {
-      color: pink; }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      width: 60%;
+      margin: 3rem 0 0 0;
+      border-radius: 20px;
+      background: radial-gradient(96.64% 139.16% at 1.21% 98.06%, #7BEAD6 0%, rgba(255, 255,
+            255, 0) 100%), radial-gradient(100% 144% at 0% 0%, #D99EFF 0%, rgba(255,
+            255, 255, 0) 100%), radial-gradient(100% 144% at 100% 0%, #FF9777 0%, rgba(255,
+            255, 255, 0) 100%), radial-gradient(100% 144% at 100% 100%, #6A25BD 0%,
+            rgba(255, 255, 255, 0) 100%); }
 
-      h2 {
+      h1 {
+        color: #23232a;
         padding: 2rem;
-        font-size: 1.4 rem; }
+        font-size: 3rem; }
 
-        .add-link {
-          text-decoration: none;
-          font-size: 1.4rem;
-          padding: 2rem; }
+        h2 {
+          padding: 2rem;
+          font-size: 1.4 rem; }
 
-          .delete {
-            display: none; }
+          .add-link {
+            text-decoration: none;
+            font-size: 1.4rem;
+            padding: 2rem; }
 
-            .cards {
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: left;
-              align-items: center; }
+            .delete {
+              display: none; }
 
-              .item-card {
-                width: auto;
-                border-radius: 6px;
-                border: solid #23232a;
-                padding: 1rem;
-                margin: 2rem; }
+              .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+                align-items: center; }
 
-                .item-card:hover .delete {
-                  display: inline;
-                  text-decoration: none; }
+                .item-card {
+                  width: auto;
+                  max-width: 14.5rem;
+                  border-radius: 0.375rem;
+                  border: solid #23232a;
+                  padding: 1rem;
+                  margin: 2rem; }
 
-                  .image {
-                    width: 200px; }
+                  .item-card:hover .delete {
+                    display: inline;
+                    text-decoration: none; }
 
-                    .item-card-bottom {
-                      display: flex;
-                      justify-content: space-between; }
+                    .image {
+                      width: 12.5rem; }
 
-                      .add-page {
+                      .item-card-bottom {
                         display: flex;
-                        flex-direction: column;
-                        align-items: center; }
+                        flex-wrap: wrap;
+                        justify-content: space-between; }
 
-                        .add-form {
+                        .add-page {
                           display: flex;
-                          flex-direction: column; }
+                          flex-direction: column;
+                          align-items: center; }
 
-                          .add-form > * {
-                            margin: 5px 0; }
+                          .add-form {
+                            display: flex;
+                            flex-direction: column; }
 
-                            .input-areas {
-                              padding: 0 0.25rem;
-                              height: 42px;
-                              border-style: none;
-                              border-radius: 4px;
-                              background: #CBDFDD; }
+                            .add-form > * {
+                              margin: 5px 0; }
 
-                              textarea {
-                                padding: 0.25rem;
+                              .input-areas {
+                                padding: 0 0.25rem;
+                                height: 42px;
                                 border-style: none;
                                 border-radius: 4px;
                                 background: #CBDFDD; }
 
-                                .buttons {
-                                  display: flex;
-                                  justify-content: space-between; }
+                                textarea {
+                                  padding: 0.25rem;
+                                  border-style: none;
+                                  border-radius: 4px;
+                                  background: #CBDFDD; }
 
-                                  .cancel {
-                                    text-decoration: none;
-                                    background-color: #fff;
-                                    border-style: none; }
+                                  .buttons {
+                                    display: flex;
+                                    justify-content: space-between; }
 
-                                    .add {
-                                      width: 128px;
-                                      height: 42px;
-                                      background: #7DACA7;
-                                      border-radius: 4px;
-                                      border-style: none; }
+                                    .cancel {
+                                      text-decoration: none;
+                                      border-style: none;
+                                      padding: 0.7rem 1.5rem; }
 
-                                      .details-page {
-                                        display: flex; }
+                                      .add {
+                                        width: 128px;
+                                        height: 42px;
+                                        background: #7DACA7;
+                                        border-radius: 4px;
+                                        border-style: none; }
 
-                                        .poster .image {
-                                          padding: 2rem;
-                                          width: 400px; }
+                                        .details-page {
+                                          display: flex; }
 
-                                          .product-info {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            padding: 0 3rem; }
+                                          .poster .image {
+                                            padding: 2rem;
+                                            width: 400px; }
 
-                                            .product-info h3 {
-                                              text-transform: uppercase;
-                                              padding: 2rem 0 0 0; }
+                                            .product-info {
+                                              display: flex;
+                                              flex-direction: column;
+                                              justify-content: space-between;
+                                              padding: 0 3rem; }
 
-                                              .product-info .delete {
-                                                display: block; }
+                                              .product-info h3 {
+                                                text-transform: uppercase;
+                                                padding: 2rem 0 0 0; }
+
+                                                .product-info .delete {
+                                                  display: block;
+                                                  padding-bottom: 3rem; }

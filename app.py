@@ -6,6 +6,8 @@ import os
 app = Flask(__name__)
 Scss(app, static_dir='static/css', asset_dir='assets')
 
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+
 @app.route('/')
 def get_homepage():
   # get product listings from API

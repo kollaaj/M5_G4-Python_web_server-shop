@@ -43,25 +43,24 @@ h1 {
   font-size: 3rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 h2 {
   padding: 2rem;
   font-size: 1.4 rem;
 }
 
 .add-link {
-  text-decoration: none;
   font-size: 1.4rem;
   padding: 2rem;
-}
-
-.delete {
-  display: none;
 }
 
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
 }
 
@@ -72,11 +71,6 @@ h2 {
   border: solid rgb(35, 35, 42);
   padding: 1rem;
   margin: 2rem;
-}
-
-.item-card:hover .delete {
-  display: inline;
-  text-decoration: none;
 }
 
 .image {
